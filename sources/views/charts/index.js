@@ -1,24 +1,24 @@
 import {JetView} from "webix-jet";
 
-export default class ChartsView extends JetView{
-	config(){
+export default class ChartsView extends JetView {
+	config() {
 		return {
-			view:"scrollview", body:{
+			view: "scrollview", body: {
 
-				rows:[
+				rows: [
 					{
-						type:"wide", cols:[
-							{ $subview:"charts.time" },
-							{ $subview:"charts.progress" }
+						cols: [
+							{$subview: "charts.time"},
+							{$subview: "charts.progress"}
 						]
 					},
 					{
-						$subview:"charts.statistics"
+						$subview: "charts.statistics"
 					},
 					{
-						type:"wide", cols:[
-							{ $subview:"charts.geo" },
-							{ $subview:"charts.compare" }
+						cols: [
+							{$subview: "charts.geo"},
+							{$subview: "charts.compare"}
 						]
 					}
 				]

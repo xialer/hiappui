@@ -15,7 +15,6 @@ export default class TopView extends JetView {
 			scroll: false,
 			data: [
 				{id: "dash", value: "控制台", icon: "mdi mdi-view-dashboard"},
-				{id: "data", value: "數據", icon: "mdi mdi-view-dashboard"},
 				{id: "charts", value: "数据统计", icon: "mdi mdi-chart-areaspline"},
 				{id: "tables", value: "数据管理", icon: "mdi mdi-table"},
 				{id: "forms", value: "代码管理", icon: "mdi mdi-format-line-style"},
@@ -34,7 +33,7 @@ export default class TopView extends JetView {
 				{view: "icon", icon: "mdi mdi-bell", badge: "5"},
 				{view: "icon", icon: "mdi mdi-settings"},
 				{
-					template: `<image class="mainphoto" src="data/images/morgan_yu.jpg">
+					template: `<image class="mainphoto" src="data/images/avatar/71_avatar_middle.jpg">
 					<span class="webix_icon mdi mdi-circle status green"></span>`,
 					width: 60, css: "avatar", borderless: true
 				}

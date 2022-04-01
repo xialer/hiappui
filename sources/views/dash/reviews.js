@@ -48,7 +48,7 @@ export default class ReviewsView extends JetView {
 							return "<span class='stars'>" + result + "</span>";
 						},
 						template:(obj) => `
-							<div class="img"><img src="data/images/${obj.photo}.jpg" /></div>
+							<div class="img"><img src="data/images/avatar/${obj.photo}.jpg" /></div>
 							<div class="text">
 								<span class="webix_icon mdi mdi-bookmark-${obj.mark?"check":"plus"} mark"></span>
 								<span class="name">${obj.name}</span>

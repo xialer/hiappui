@@ -9,7 +9,7 @@ const data = new webix.DataCollection({
 		{
 			id: 1,
 			mark: 1,
-			photo: "whitten",
+			photo: "17_avatar_middle",
 			name: "张鹏",
 			stars: 5,
 			date: "2022-01-23",
@@ -19,7 +19,7 @@ const data = new webix.DataCollection({
 		{
 			id: 2,
 			mark: 0,
-			photo: "sho",
+			photo: "36_avatar_middle",
 			name: "王晓非",
 			stars: 5,
 			date: "2022-01-19",
@@ -29,7 +29,7 @@ const data = new webix.DataCollection({
 		{
 			id: 3,
 			mark: 0,
-			photo: "ilyushin",
+			photo: "54_avatar_middle",
 			name: "何宝贵",
 			stars: 5,
 			date: "2022-01-12",
@@ -39,7 +39,7 @@ const data = new webix.DataCollection({
 		{
 			id: 4,
 			mark: 1,
-			photo: "yu",
+			photo: "57_avatar_middle",
 			name: "于力克",
 			stars: 5,
 			date: "2022-01-9",
@@ -49,7 +49,7 @@ const data = new webix.DataCollection({
 		{
 			id: 5,
 			mark: 0,
-			photo: "winslow",
+			photo: "74_avatar_middle",
 			name: "马强",
 			stars: 5,
 			date: "2022-01-3",
