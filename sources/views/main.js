@@ -6,7 +6,8 @@ export default class TopView extends JetView {
 
 		const sidebar = {
 			localId: "menu",
-			view: "sidebar", css: "webix_dark", width: 200,
+			view: "sidebar",
+			css: "webix_dark", width: 200,
 			collapsed: true,
 			position: "left",
 
