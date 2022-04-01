@@ -60,7 +60,9 @@ export default class QuickNavigation extends JetView {
 							this.app.callEvent("currency:select", [id]);
 						}
 					}
-				}
+				},
+
+
 			]
 		};
 	}

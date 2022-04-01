@@ -6,7 +6,7 @@ export default class InventoryApp extends JetApp {
 		super(webix.extend({
 			id: APPNAME,
 			version: VERSION,
-			start: "/main/forms",
+			start: "/main/dash",
 			debug: !PRODUCTION
 		}, config, true));
 

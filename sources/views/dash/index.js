@@ -6,7 +6,9 @@ export default class TopView extends JetView{
 			type:"space", rows:[
 				{
 					type:"wide",
-					cols:[ { $subview:"dash.quicknavigation" }, { $subview:"dash.progress" } ]
+					cols:[
+						{ $subview:"dash.quicknavigation" },
+						{ $subview:"dash.progress" } ]
 				},
 				{ type:"wide", cols:[
 					{ $subview:"dash.reviews" },
