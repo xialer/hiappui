@@ -6,11 +6,11 @@ export default class SheetView extends JetView{
 			type:"space", rows:[{
 				view: "pivot",
 				structure: {
-					rows: ["form", "name"],
-					columns: ["year"],
-					values: [{ name: "oil", operation: ["min", "sum"] }],
+					rows: ["体制", "国家"],
+					columns: ["年度"],
+					values: [{ name: "产油量", operation: ["min"] }],
 				},
-				url: "https://cdn.webix.com/demodata/pivot.json",
+				url: "data/pivot.json",
 			}]
 		};
 
