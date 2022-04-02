@@ -128,13 +128,38 @@ export default class FormsView extends JetView {
 							id: "aboutView"
 						}], height: 50
 					}, {
-						id: "editor", view: "ace-editor", value: `var 查询纪录 = HiAPP.DataQueryBuilder.create();
-// set query builder properties
-// queryBuilder.setXXXX
-HiAPP.Data.of( "客户情况" ).find( 查询纪录 )
-.then( function( objectArray ) {
-}).catch( function( error ) {
-}); //文件代码`
+						id: "editor", view: "ace-editor", value: `'use strict';
+
+class /*SERVICE_NAME*/shoppingCart/*SERVICE_NAME*/ {
+/*TYPES*/
+/*TYPES*/
+/*METHODS*/
+/*METHOD purchase*//*METHOD_COMPLEX_TYPES*//**//*METHOD_COMPLEX_TYPES*/
+
+/**
+* @route POST /purchase
+* @param {String} cartName 
+*/
+async purchase(cartName) {
+/*METHOD_BODY*/
+var item, shoppingCart;
+
+
+  shoppingCart = (await Xtsmart.Cache.get(cartName));
+  if (shoppingCart != null) {
+    for (var item_index in shoppingCart) {
+      item = shoppingCart[item_index];
+      await Xtsmart.Data.of('Order').save( item );
+      await Xtsmart.Cache.remove(cartName);
+    }
+  }
+
+/*METHOD_BODY*/
+}
+/*METHODS*/
+}
+
+Xtsmart.ServerCode.addService(/*SERVICE_NAME*/shoppingCart/*SERVICE_NAME*/);`
 					}, {
 						view: "toolbar", cols: [{
 							view: "button", id: "LoadBut", value: "Load", width: 100, align: "left"

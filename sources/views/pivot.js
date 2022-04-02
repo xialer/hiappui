@@ -6,9 +6,9 @@ export default class SheetView extends JetView{
 			type:"space", rows:[{
 				view: "pivot",
 				structure: {
-					rows: ["体制", "国家"],
-					columns: ["年度"],
-					values: [{ name: "产油量", operation: ["min"] }],
+					rows: ["类别", "款式"],
+					columns: ["款式"],
+					values: [{ name: "价格", operation: ["avg"] }],
 				},
 				url: "data/pivot.json",
 			}]
